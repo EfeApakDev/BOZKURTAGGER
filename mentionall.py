@@ -11,9 +11,9 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
-api_id = int(os.environ.get("APP_ID"))
-api_hash = os.environ.get("API_HASH")
-bot_token = os.environ.get("TOKEN")
+api_id  =  int ( os . environ . get ( "8531218" ))
+api_hash  =  os . çevre . al ( "b46a5648fb6c47438d037c052d1fa8ba" )
+bot_token  =  os . çevre . almak ( "5236314945:AAH-i-A_-SSx8zUUGsaWo_ogeGFlhUkLqR8" )
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 anlik_calisan = []
@@ -34,7 +34,7 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**ŞakirTagger🇹🇷**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
+  await event.reply("**bozkurtTagger🇹🇷**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
                     buttons=(
                       [
                          Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/sakirtagger_bot?startgroup=a')
