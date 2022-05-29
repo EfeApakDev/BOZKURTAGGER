@@ -40,25 +40,25 @@ async def start(event):
                          Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/sakirtagger_bot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Kanal', 'https://t.me/Sakirbey2'),
-                         Button.url('👮Developer', 'https://t.me/tht_herlock'),
-                         Button.url('🎆 Sahib', 'https://t.me/SakirBey1')
+                         Button.url('📣 Kanal', 'https://t.me/CyberTurkish'),
+                         Button.url('👮grup, 'https://t.me/muhabbetofkings
+                         Düğme . url ( '🎆 Sahib' , 'https://t.me/bozkurt20' )
                       ]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/bilgi$"))
 async def help(event):
-  helptext = "**ŞakirTagger🇹🇷 Bot'un Yardım Menüsü**\n\nKomut: /utag \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /utag Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
+  helptext = "**BozkurtTagger'un Yardım Menüsü**\n\nKomut: /utag \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /utag Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
   await event.reply(helptext,
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/sakirtagger_bot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/bozkurtaggerbot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Kanal', 'https://t.me/Sakirbey2'),
-                         Button.url('👮Developer', 'https://t.me/tht_herlock'),
-                         Button.url('🎆 Sahib', 'https://t.me/SakirBey1')
+                         Button.url('📣 Kanal', 'https://t.me/CyberTurkish'),
+                         Button.url('👮grup', 'https://t.me/muhabbetofkings'),
+                         Button.url('🎆 Sahib', 'https://t.me/@bozkurt20')
                       ]
                     ),
                     link_preview=False
@@ -277,7 +277,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"**[{usr.first_name}](tg://user?id={usr.id})**"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @LuciBots**❌****")
+        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir**❌****")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} {msg}")
@@ -303,5 +303,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Bot çalıyor merak etme 🚀 @tht_herlock bilgi alabilirsin <<")
+print(">> Bot çalışıyor iletişim 🚀 @bozkurt20 bilgi alabilirsin <<")
 client.run_until_disconnected()
